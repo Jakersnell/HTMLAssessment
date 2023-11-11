@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Html Assessment</title>
+	<style>
+		.sports-table {
+			border-collapse: collapse;
+			border-spacing: 0;
+			text-align: center;
+		}
+		.sports-table, .sports-table th, .sports-table td  {
+			padding-inline: 1.6vw;
+            border-width: 0.16vw;
+            border-color: black;
+            border-style: solid;
+        }
+        .team-icon {
+        	max-width: 50px;
+        }
+        .spacer {
+        	padding-top: 20px;
+        }
+	</style>
+</head>
+<body>
+	<h2>TEXT</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<blockquote>
+		<p>
+			    <strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</blockquote>
+	<p>
+		<strong>Lorem</strong> ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aliquam ut porttitor leo a diam. Duis ut diam quam nulla porttitor massa id neque. Eget arcu dictum varius duis at consectetur. Feugiat vivamus at augue eget arcu dictum. Sit amet volutpat consequat mauris nunc congue nisi vitae. Tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum. Eu nisl nunc mi ipsum faucibus vitae aliquet. Bibendum at varius vel pharetra vel turpis nunc eget. Enim nunc faucibus a pellentesque sit amet porttitor eget. Quam elementum pulvinar etiam non quam lacus. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Eget est lorem ipsum dolor.
+	</p>
+	<h2>TABLE</h2>
+	<table class="sports-table">
+		<tr>
+			<th rowspan="2">Team Name</th>
+			<th colspan="2">First Half</th>
+			<th colspan="2">Second Half</th>
+			<th rowspan="2">final</th>
+		</tr>
+		<tr>
+			<td>Q1</td>
+			<td>Q2</td>
+			<td>Q3</td>
+			<td>Q4</td>
+		</tr>
+		<tr>
+			<td>Denver</td>
+			<td>7</td>
+			<td>3</td>
+			<td>0</td>
+			<td>7</td>
+			<td>17</td>
+		</tr>
+		<tr>
+			<td>Chicago</td>
+			<td>3</td>
+			<td>3</td>
+			<td>0</td>
+			<td>7</td>
+			<td>15</td>
+		</tr>
+		<tr>
+			<th>Total</th>
+			<th>7</th>
+			<th>9</th>
+			<th>3</th>
+			<th>13</th>
+			<th>32</th>
+		</tr>
+	</table>
+
+	<h2>LIST</h2>
+	<ul>
+		
+		<li>
+			<h3><a href="https://www.denverbroncos.com/">Denver Broncos</a></h3>
+			<img class="team-icon" src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/DEN">
+		</li>
+		<li>
+			Coach: Gary Kubiak
+		</li>
+		<li>
+			QB
+			<ol>
+				<li>
+					Brock Osweiler
+				</li>
+				<li>
+					Trevor Siemian
+				</li>
+				<li>
+					Peyton Manning (injured)
+				</li>
+			</ol>
+		</li>
+	</ul>
+	<div class="spacer"></div>
+	<ul>
+		
+		<li>
+			<h3><a href="https://www.chicagobears.com/">Chicago Bears</a></h3>
+			<img class="team-icon" src="https://static.www.nfl.com/t_q-best/league/api/clubs/logos/CHI">
+		</li>
+		<li>
+			Coach: Gary Kubiak
+		</li>
+		<li>
+			QB
+			<ol>
+				<li>
+					Jay Cutler
+				</li>
+				<li>
+					David Foles
+				</li>
+			</ol>
+		</li>
+	</ul>
+
+	<h2>FORM</h2>
+	<form>
+		<label>First Name: <input type="text"></label>
+		<br><br>
+		<label>Last Name: <input type="text"></label>
+		<br><br>
+		<label for="teams">Select your favorite sport:</label>
+		<br>
+		<select id="teams" name="teams">
+			<option>basketball</option>
+			<option>soccer</option>
+			<option>football</option>
+		</select>
+		<br>
+
+		<label>
+			Have you ever played this sport? 
+			<input type="checkbox" name="played">
+		</label>
+		<br>
+
+		<label>
+			Have you ever attended an event for this sport? 
+			<input type="checkbox" name="attended">
+		</label>
+		<br>
+
+		<label>Have you ever coached this sport? 
+			<input type="checkbox" name="coached">
+		</label>
+		<br>
+
+		<label>Have you ever bet on this sport? 
+			<input type="checkbox" name="bet">
+		</label>
+		<br><br>
+
+		<label for="preference">
+		For this sport I prefer the: 
+		</label>
+		<br>
+
+		<label>
+			Amatuer
+		<input type="radio" id="preference" name="preference">
+		</label>
+		<label>
+			Professional
+		<input type="radio" id="preference" name="preference">
+		</label>
+		<label>
+			College
+		<input type="radio" id="preference" name="preference">
+		</label>
+		<br>
+		<button><input type="submit"></button>
+		</input>
+	</form>
+
+</body>
+</html>
